@@ -3,6 +3,8 @@
 # StegaNet 
 Mini Project Steganet: Enhancing digital security with advanced steganography &amp; SAML-based authentication. Embed encrypted messages covertly, ensuring confidentiality. Integrates seamlessly &amp; tested rigorously. Join us in fortifying digital communication security.
 
+Link To The Hosted Project:- https://aditya-1302.github.io/StegaNet/function.html
+
 Problem Statement:
 
 In the rapidly evolving digital communication landscape, traditional encryption methods often fall short in safeguarding sensitive information against sophisticated attacks. There is a pressing need for a more robust and covert approach to fortifying digital communication security, one that can overcome the limitations of conventional encryption techniques.
