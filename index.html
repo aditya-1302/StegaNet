@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="video-container">
+    <video autoplay muted loop id="background-video">
+      <source src="https://cdn.pixabay.com/video/2015/11/02/1236-144355017_large.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="content">
+      <h1>Welcome to Steganet Secure Your Communication</h1>
+      <button id="myButton">Send Secure Message </button>
+    </div>
+  </div>
+
+  <script>
+    const myButton = document.getElementById('myButton');
+    myButton.addEventListener('click', () => {
+      window.location.href = "function.html";
+    });
+  </script>
+</body>
+</html>

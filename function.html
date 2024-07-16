@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Steganography</title>
+  <link rel="stylesheet" href="function.css">
+
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="video-container">
+      <video autoplay muted loop id="background-video">
+        <source src="https://cdn.pixabay.com/video/2015/11/02/1236-144355017_large.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="container">
+        <h1>StegaNet - Secure Your Communication</h1>
+        <div class="content">
+          <div class="encryption-box">
+            <div class="box">
+              <h2>Encode Message</h2>
+              <form id="encode-form" enctype="multipart/form-data">
+                <input type="file" id="image-input" accept="image/*" required>
+                <textarea id="message-input" placeholder="Enter your message here" required></textarea>
+                <button type="submit">Encode</button>
+              </form>
+              <div id="encoded-image-container" style="display: none;">
+                <h2>Encoded Image</h2>
+                <img id="encoded-image">
+              </div>
+            </div>
+            <div class="box">
+              <h2>Decode Message</h2>
+              <form id="decode-form">
+                <input type="file" id="encoded-image-input" accept="image/*" required>
+                <button type="submit">Decode</button>
+              </form>
+              <div id="decoded-message-container" style="display: none;">
+                <h2>Decoded Message</h2>
+                <textarea id="decoded-message" readonly></textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="function.js"></script>
+</body>
+</html>
